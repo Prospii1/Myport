@@ -67,12 +67,15 @@ export interface ExperienceItem {
 export interface Testimonial {
   id: string;
   name: string;
-  role: string;
+  role?: string;
   company?: string;
+  location?: string;
   photo?: string;
   quote: string;
   project?: string;
   rating?: number;
+  source?: string;
+  date?: string;
 }
 
 export interface Metric {
