@@ -1,11 +1,14 @@
-import RevealText from "@/components/ui/RevealText";
 import TextReveal3D from "@/components/ui/TextReveal3D";
+import RevealText from "@/components/ui/RevealText";
 import { siteSettings } from "@/data/settings";
 
 export default function Positioning() {
   return (
     <section id="positioning" className="relative px-6 py-28 md:px-12 md:py-36">
       <div className="mx-auto max-w-5xl">
+        <RevealText className="mono-label mb-6 text-muted">
+          {siteSettings.positioningLabel}
+        </RevealText>
         <TextReveal3D
           as="h2"
           text={siteSettings.positioningStatement}

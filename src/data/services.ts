@@ -3,45 +3,31 @@ import { Service } from "@/types";
 // Mirrors the future `services` table.
 export const services: Service[] = [
   {
-    id: "ai-automation",
-    title: "AI & Automation",
+    id: "ai-systems",
+    title: "AI Systems",
     description:
-      "For businesses losing leads and hours to manual follow-up: AI agents that respond, qualify and route while you're doing anything else.",
-    capabilities: ["AI Agents", "OpenAI / Claude Integration", "n8n & Make.com Workflows", "Process Automation"],
+      "AI agents, assistants and intelligent workflows that can understand information, make decisions and take action.",
+    capabilities: ["AI Agents", "LLMs", "OpenAI", "Claude"],
   },
   {
-    id: "digital-product",
-    title: "Digital Product Development",
+    id: "business-automation",
+    title: "Business Automation",
     description:
-      "For founders who need a real, working platform, not a mockup: MVPs and business tools built to launch fast and hold up under real use.",
-    capabilities: ["React / Next.js", "FastAPI / Python", "Supabase / PostgreSQL", "Product Architecture"],
+      "Connect your tools, eliminate repetitive work and create workflows that run without constant human intervention.",
+    capabilities: ["n8n", "Make", "Zapier", "APIs", "Webhooks"],
   },
   {
-    id: "process-automation",
-    title: "Business Process Automation",
+    id: "digital-products",
+    title: "Digital Products",
     description:
-      "For teams juggling five disconnected tools: every app, sheet and inbox wired into one system that runs itself.",
-    capabilities: ["Webhooks & REST APIs", "CRM Automation", "Zapier / Make / n8n", "Cross-Platform Integration"],
+      "Turn an idea into a functional product, from MVP to production-ready business platform, with an interface that's intuitive and built to convert.",
+    capabilities: ["Bubble", "React", "Next.js", "Supabase"],
   },
   {
-    id: "no-code",
-    title: "No-Code / Low-Code Development",
+    id: "business-systems",
+    title: "Business Systems",
     description:
-      "For businesses that can't wait on a dev team: production-ready products built rapidly on Bubble, without cutting corners on quality.",
-    capabilities: ["Bubble.io", "Airtable", "Notion Systems", "Rapid MVP Delivery"],
-  },
-  {
-    id: "ui-ux",
-    title: "UI/UX & Digital Experiences",
-    description:
-      "For brands whose product works but doesn't look like it: interfaces that are intuitive, premium and built to convert.",
-    capabilities: ["Interface Design", "Design Systems", "Interaction Design", "Conversion-Focused UX"],
-  },
-  {
-    id: "full-stack",
-    title: "Full-Stack Development",
-    description:
-      "For when no-code hits its ceiling: robust custom frontend and backend systems built to scale past it.",
-    capabilities: ["Next.js / TypeScript", "PostgreSQL", "Stripe / Paystack", "API Design"],
+      "CRM platforms, internal tools, management systems and custom applications built around the way your business actually operates.",
+    capabilities: ["FastAPI / Python", "PostgreSQL", "Stripe / Paystack", "API Design"],
   },
 ];

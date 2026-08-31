@@ -80,14 +80,19 @@ export default function Hero({ started }: { started: boolean }) {
         </h1>
 
         <div className="mt-8 flex flex-col gap-8 border-t border-line pt-8 md:flex-row md:items-end md:justify-between">
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: started ? 1 : 0, y: started ? 0 : 12 }}
             transition={{ delay: 1, duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="mono-label max-w-xl text-white/60 md:text-[13px]"
+            className="max-w-xl"
           >
-            {siteSettings.heroSupporting}
-          </motion.p>
+            <p className="mono-label text-cyan">
+              {siteSettings.ownerName.toUpperCase()} / {siteSettings.ownerTitle.toUpperCase()}
+            </p>
+            <p className="mono-label mt-3 text-white/60 md:text-[13px]">
+              {siteSettings.heroSupporting}
+            </p>
+          </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 12 }}

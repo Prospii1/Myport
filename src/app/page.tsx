@@ -10,6 +10,7 @@ import Positioning from "@/components/sections/Positioning";
 import Services from "@/components/sections/Services";
 import Process from "@/components/sections/Process";
 import Technologies from "@/components/sections/Technologies";
+import Philosophy from "@/components/sections/Philosophy";
 import Work from "@/components/sections/Work";
 import About from "@/components/sections/About";
 import Experience from "@/components/sections/Experience";
@@ -34,6 +35,7 @@ export default function Home() {
         <Services />
         <Process />
         <Technologies />
+        <Philosophy />
         <About />
         <Experience />
         <Metrics />

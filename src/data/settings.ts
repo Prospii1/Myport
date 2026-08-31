@@ -5,15 +5,23 @@ import { SiteSettings, SocialLink } from "@/types";
 export const siteSettings: SiteSettings = {
   ownerName: "Prosper Ojiaku",
   brandName: "EVIMERO",
+  ownerTitle: "AI & Automation Engineer / Digital Product Builder",
   availableForWork: true,
   availabilityNote: "Available for select projects",
   email: "enwerechristian1@gmail.com",
-  heroHeadline: ["A LEAD GOES COLD", "WHILE YOU'RE STILL TYPING."],
+  heroHeadline: ["I TURN BUSINESS PROBLEMS", "INTO DIGITAL SYSTEMS."],
   heroSupporting:
-    "I build the AI agents, automations and no-code systems that answer, sort and follow up before your business ever notices the gap.",
-  positioningStatement: "I DON’T JUST BUILD WEBSITES. I BUILD DIGITAL SYSTEMS.",
+    "From AI agents and automated workflows to complete business platforms, I design and build systems that make complex operations simpler.",
+  positioningLabel: "How I Think / 01",
+  positioningStatement: "SOFTWARE ISN'T THE GOAL. THE OUTCOME IS.",
   positioningBody:
-    "EVIMERO combines product design, automation, AI and modern no-code and full-stack development to build digital experiences and systems that solve real business problems, not just interfaces.",
+    "A beautiful interface means nothing if the process behind it is broken. I work at the intersection of business, automation, AI and product development: understanding what needs to happen, then building the system that makes it happen. From intelligent AI agents and automated workflows to complete digital products, I turn complicated processes into systems people can actually use.",
+  philosophyStatement: ["DON'T AUTOMATE", "A BAD PROCESS."],
+  philosophyBody:
+    "First understand the process. Then find the bottleneck. Then design the system. Then automate what should be automated.",
+  contactStatement: ["WHAT SHOULD WE", "BUILD NEXT?"],
+  contactBody:
+    "Have a business problem, an idea, or a process that needs a better system?",
 };
 
 // Mirrors the future `social_links` table.

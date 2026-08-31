@@ -4,6 +4,8 @@ import { FormEvent, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import MagneticButton from "@/components/ui/MagneticButton";
 import SectionLabel from "@/components/ui/SectionLabel";
+import TextReveal3D from "@/components/ui/TextReveal3D";
+import { siteSettings } from "@/data/settings";
 
 const projectTypes = [
   "AI / Automation System",
@@ -57,11 +59,16 @@ export default function Contact() {
     <section id="contact" className="relative px-6 py-28 md:px-12 md:py-36">
       <div className="mx-auto max-w-4xl">
         <SectionLabel index="07" label="Contact" />
-        <h2 className="font-display text-[10vw] font-medium leading-[0.95] text-white md:text-[4.6vw]">
-          Let&rsquo;s Build Something Impossible.
-        </h2>
+        {siteSettings.contactStatement.map((line, i) => (
+          <TextReveal3D
+            key={i}
+            as="h2"
+            text={line}
+            className="font-display text-[10vw] font-medium leading-[0.95] text-white md:text-[4.6vw]"
+          />
+        ))}
         <p className="mt-6 max-w-lg text-lg text-muted">
-          Have a product, process or idea that needs to become reality?
+          {siteSettings.contactBody}
         </p>
 
         <AnimatePresence mode="wait">
@@ -119,6 +126,10 @@ export default function Contact() {
             </motion.form>
           )}
         </AnimatePresence>
+
+        <p className="mono-label mt-16 text-muted">
+          {siteSettings.ownerName.toUpperCase()} / {siteSettings.brandName}
+        </p>
       </div>
     </section>
   );

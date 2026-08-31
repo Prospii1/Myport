@@ -4,25 +4,27 @@ export interface TechGroup {
 }
 
 // Grouped for the interactive capabilities visualization, not a logo wall.
+// The framing is deliberate: the stack is presented as a set of tools
+// chosen per problem, not a skills checklist.
 export const technologies: TechGroup[] = [
   {
-    category: "No-Code / Product",
-    items: ["Bubble.io", "Airtable", "Notion"],
+    category: "AI",
+    items: ["OpenAI", "Claude", "AI Agents"],
   },
   {
-    category: "Frontend",
-    items: ["React", "Next.js", "JavaScript", "HTML/CSS"],
+    category: "Automation",
+    items: ["n8n", "Make", "Zapier"],
+  },
+  {
+    category: "Product",
+    items: ["Bubble", "React", "Next.js"],
   },
   {
     category: "Backend",
-    items: ["Python", "FastAPI", "PostgreSQL", "REST APIs", "Webhooks"],
+    items: ["Python", "FastAPI", "Supabase", "PostgreSQL"],
   },
   {
-    category: "AI & Automation",
-    items: ["OpenAI", "Claude", "AI Agents", "n8n", "Make.com", "Zapier"],
-  },
-  {
-    category: "Infrastructure & Payments",
-    items: ["Supabase", "Stripe", "Paystack"],
+    category: "Integration",
+    items: ["REST APIs", "Webhooks", "CRM", "Payments"],
   },
 ];

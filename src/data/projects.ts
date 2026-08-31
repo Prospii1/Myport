@@ -8,7 +8,8 @@ export const projects: Project[] = [
   {
     slug: "ai-sales-agent",
     title: "AI Sales Agent",
-    tagline: "An autonomous sales agent built on Claude, n8n and Supabase.",
+    tagline:
+      "An intelligent sales system designed to handle conversations, qualify prospects and move leads through the sales process without relying on manual intervention.",
     year: "2025",
     type: "AI & Automation",
     technologies: ["Claude API", "n8n", "Supabase", "PostgreSQL"],
@@ -31,7 +32,8 @@ export const projects: Project[] = [
   {
     slug: "ai-invoice-processing",
     title: "AI Invoice Data Extraction & Processing",
-    tagline: "Automated extraction and processing of invoice data using AI.",
+    tagline:
+      "An automated pipeline that extracts structured information from invoices and moves it directly into a usable business workflow.",
     year: "2025",
     type: "AI & Automation",
     technologies: ["OpenAI", "Python", "FastAPI", "Automation"],
@@ -54,7 +56,8 @@ export const projects: Project[] = [
   {
     slug: "crm-platform",
     title: "CRM Platform",
-    tagline: "A full customer relationship management platform for growing teams.",
+    tagline:
+      "A centralized system for managing customer relationships, replacing scattered spreadsheets and disconnected tools with one source of truth.",
     year: "2024",
     type: "CRM & Business Systems",
     technologies: ["Bubble.io", "PostgreSQL", "REST APIs"],
@@ -77,7 +80,8 @@ export const projects: Project[] = [
   {
     slug: "vendor-management-system",
     title: "Vendor Management System",
-    tagline: "A platform to manage vendors, contracts and procurement workflows.",
+    tagline:
+      "A centralized platform designed to simplify vendor management and bring operational workflows into one digital system.",
     year: "2024",
     type: "CRM & Business Systems",
     technologies: ["Bubble.io", "PostgreSQL", "Automation"],
@@ -100,7 +104,8 @@ export const projects: Project[] = [
   {
     slug: "gpt-rfp-generator",
     title: "GPT RFP Generator",
-    tagline: "AI-assisted generation of request-for-proposal documents.",
+    tagline:
+      "A system that turns the slow, manual work of drafting RFP responses into a guided, AI-assisted process.",
     year: "2024",
     type: "AI & Automation",
     technologies: ["OpenAI", "Next.js", "Python"],
@@ -123,7 +128,8 @@ export const projects: Project[] = [
   {
     slug: "project-management-system",
     title: "Project Management System",
-    tagline: "A platform for planning, tracking and delivering team projects.",
+    tagline:
+      "A single system for planning, tracking and delivering team projects, replacing scattered spreadsheets and status updates.",
     year: "2024",
     type: "Web Application",
     technologies: ["Bubble.io", "PostgreSQL"],
@@ -146,7 +152,8 @@ export const projects: Project[] = [
   {
     slug: "ecommerce-website",
     title: "E-Commerce Website",
-    tagline: "A modern storefront built for conversion and scale.",
+    tagline:
+      "A storefront built to convert visitors into customers, not just display a product catalog.",
     year: "2024",
     type: "Web Application",
     technologies: ["Next.js", "Stripe", "PostgreSQL"],
@@ -169,7 +176,8 @@ export const projects: Project[] = [
   {
     slug: "ai-voice-assistant",
     title: "AI Voice Assistant",
-    tagline: "A conversational voice assistant for hands-free workflows.",
+    tagline:
+      "A voice-driven system that handles routine requests hands-free, so people don't have to stop what they're doing to get an answer.",
     year: "2024",
     type: "AI & Automation",
     technologies: ["OpenAI", "Python", "FastAPI"],
@@ -192,7 +200,8 @@ export const projects: Project[] = [
   {
     slug: "hr-management-app",
     title: "HR Management App",
-    tagline: "Centralized management of employee records and HR operations.",
+    tagline:
+      "A single system for employee records and HR operations, replacing the usual sprawl of files, forms and spreadsheets.",
     year: "2023",
     type: "Web Application",
     technologies: ["Bubble.io", "PostgreSQL"],
@@ -215,7 +224,8 @@ export const projects: Project[] = [
   {
     slug: "accounting-web-app",
     title: "Accounting Web App",
-    tagline: "Financial tracking and reporting built for small business operations.",
+    tagline:
+      "A system that keeps financial tracking and reporting current, instead of reconstructed from receipts at month-end.",
     year: "2023",
     type: "Web Application",
     technologies: ["Bubble.io", "PostgreSQL"],
@@ -238,7 +248,8 @@ export const projects: Project[] = [
   {
     slug: "invoice-generator",
     title: "Invoice Generator",
-    tagline: "Fast, automated invoice creation and delivery.",
+    tagline:
+      "A system that generates and sends invoices automatically, so getting paid doesn't depend on someone remembering to bill.",
     year: "2023",
     type: "Web Application",
     technologies: ["Bubble.io", "Automation"],
@@ -261,7 +272,8 @@ export const projects: Project[] = [
   {
     slug: "social-media-web-app",
     title: "Social Media Web App",
-    tagline: "A social platform for community-driven content sharing.",
+    tagline:
+      "A platform built around how a community actually shares and discovers content, not a generic feed template.",
     year: "2023",
     type: "Web Application",
     technologies: ["React", "Next.js", "PostgreSQL"],
@@ -284,7 +296,8 @@ export const projects: Project[] = [
   {
     slug: "blogging-web-app",
     title: "Blogging Web App",
-    tagline: "A clean, fast publishing platform for writers.",
+    tagline:
+      "A publishing system built for writers to get words out fast, without fighting a bloated editor to do it.",
     year: "2023",
     type: "Web Application",
     technologies: ["Next.js", "React"],
@@ -307,7 +320,8 @@ export const projects: Project[] = [
   {
     slug: "salesforce-outlook-automation",
     title: "Salesforce & Outlook Automation",
-    tagline: "Connecting Salesforce and Outlook through Make.com integrations.",
+    tagline:
+      "An integration that keeps Salesforce and Outlook in sync automatically, closing the gap between inbox and CRM.",
     year: "2025",
     type: "Automation & Integration",
     technologies: ["Make.com", "Salesforce API", "Outlook API"],
@@ -330,7 +344,8 @@ export const projects: Project[] = [
   {
     slug: "ai-lead-capture-crm",
     title: "AI Lead Capture & CRM Automation",
-    tagline: "Automated lead capture and routing built with n8n.",
+    tagline:
+      "A lead-processing system that captures incoming leads, extracts relevant information, updates the CRM and triggers the next stage automatically.",
     year: "2025",
     type: "Automation & Integration",
     technologies: ["n8n", "REST APIs", "CRM Integration"],
@@ -353,7 +368,8 @@ export const projects: Project[] = [
   {
     slug: "ai-email-lead-gohighlevel",
     title: "AI Email Lead Processing & GoHighLevel CRM Automation",
-    tagline: "Processing inbound leads by email and syncing directly into GoHighLevel.",
+    tagline:
+      "A system that reads inbound leads from email and pushes them straight into GoHighLevel, with nothing lost to a missed inbox check.",
     year: "2025",
     type: "Automation & Integration",
     technologies: ["OpenAI", "n8n", "GoHighLevel API"],

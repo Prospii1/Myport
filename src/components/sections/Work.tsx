@@ -16,8 +16,12 @@ export default function Work() {
       <div className="mx-auto max-w-6xl">
         <SectionLabel index="01" label="Selected Work" />
         <h2 className="font-display text-[10vw] font-medium leading-[0.95] text-white md:text-[4vw]">
-          Digital Systems, Shipped.
+          Systems I&rsquo;ve Built.
         </h2>
+        <p className="mt-6 max-w-lg text-lg text-muted">
+          Different problems require different systems. Here&rsquo;s a look at
+          what I&rsquo;ve designed, built and automated.
+        </p>
       </div>
 
       <div className="mx-auto mt-20 max-w-6xl">

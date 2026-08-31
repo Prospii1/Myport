@@ -92,11 +92,17 @@ export interface SocialLink {
 export interface SiteSettings {
   ownerName: string;
   brandName: string;
+  ownerTitle: string;
   availableForWork: boolean;
   availabilityNote: string;
   email: string;
   heroHeadline: string[];
   heroSupporting: string;
+  positioningLabel: string;
   positioningStatement: string;
   positioningBody: string;
+  philosophyStatement: string[];
+  philosophyBody: string;
+  contactStatement: string[];
+  contactBody: string;
 }
