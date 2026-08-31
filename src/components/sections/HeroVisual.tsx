@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-// Animated grid + drifting nodes/lines — abstract systems visual, canvas-based
+// Animated grid + drifting nodes/lines: abstract systems visual, canvas-based
 // for performance instead of hundreds of DOM nodes.
 export default function HeroVisual() {
   const canvasRef = useRef<HTMLCanvasElement>(null);

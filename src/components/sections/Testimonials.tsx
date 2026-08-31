@@ -1,7 +1,7 @@
 import SectionLabel from "@/components/ui/SectionLabel";
 import { testimonials } from "@/data/testimonials";
 
-// Hides entirely when there are no real testimonials — never fabricate content.
+// Hides entirely when there are no real testimonials. Never fabricate content.
 export default function Testimonials() {
   if (testimonials.length === 0) return null;
 

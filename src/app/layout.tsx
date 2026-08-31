@@ -24,13 +24,13 @@ const monoFont = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${siteSettings.brandName} — Digital Systems for Growing Businesses`,
-    template: `%s — ${siteSettings.brandName}`,
+    default: `${siteSettings.brandName} | Digital Systems for Growing Businesses`,
+    template: `%s | ${siteSettings.brandName}`,
   },
   description:
     "EVIMERO (Prosper Ojiaku) builds digital systems, AI-powered automation and no-code products for businesses that need more than a website.",
   openGraph: {
-    title: `${siteSettings.brandName} — Digital Systems for Growing Businesses`,
+    title: `${siteSettings.brandName} | Digital Systems for Growing Businesses`,
     description:
       "Bubble Developer, AI Engineer, No-Code Developer and Business Process Automation Specialist.",
     url: siteUrl,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteSettings.brandName} — Digital Systems for Growing Businesses`,
+    title: `${siteSettings.brandName} | Digital Systems for Growing Businesses`,
     description:
       "Bubble Developer, AI Engineer, No-Code Developer and Business Process Automation Specialist.",
   },

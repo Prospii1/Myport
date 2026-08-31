@@ -18,7 +18,7 @@ export default function CaseStudy({
 
   return (
     <article>
-      {/* 01 — Overview / hero */}
+      {/* 01: Overview / hero */}
       <section className="relative flex min-h-[80vh] flex-col justify-end overflow-hidden px-6 pb-20 pt-40 md:px-12">
         <div className="absolute inset-0 opacity-60">
           <ProjectVisual slug={project.slug} className="h-full w-full" />

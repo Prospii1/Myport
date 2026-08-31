@@ -3,7 +3,7 @@ export interface TechGroup {
   items: string[];
 }
 
-// Grouped for the interactive capabilities visualization — not a logo wall.
+// Grouped for the interactive capabilities visualization, not a logo wall.
 export const technologies: TechGroup[] = [
   {
     category: "No-Code / Product",

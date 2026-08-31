@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 // Placeholder persistence layer. Replace with a Supabase insert into
 // `contact_submissions` (status defaulting to "new") once the CMS phase
-// is wired up — the request contract below is already CMS-ready.
+// is wired up. The request contract below is already CMS-ready.
 export async function POST(req: NextRequest) {
   let body: Record<string, unknown>;
   try {

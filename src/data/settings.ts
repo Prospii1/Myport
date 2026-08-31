@@ -13,7 +13,7 @@ export const siteSettings: SiteSettings = {
     "I build the AI agents, automations and no-code systems that answer, sort and follow up before your business ever notices the gap.",
   positioningStatement: "I DON’T JUST BUILD WEBSITES. I BUILD DIGITAL SYSTEMS.",
   positioningBody:
-    "EVIMERO combines product design, automation, AI and modern no-code and full-stack development to build digital experiences and systems that solve real business problems — not just interfaces.",
+    "EVIMERO combines product design, automation, AI and modern no-code and full-stack development to build digital experiences and systems that solve real business problems, not just interfaces.",
 };
 
 // Mirrors the future `social_links` table.

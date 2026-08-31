@@ -1,7 +1,7 @@
 import { Metric } from "@/types";
 
 // Mirrors the future `metrics` table. verified:false marks numbers that are
-// still placeholders pending real, confirmed figures — the UI labels these
+// still placeholders pending real, confirmed figures. The UI labels these
 // visibly rather than presenting them as fact. Replace values and flip
 // verified:true once real numbers are confirmed.
 export const metrics: Metric[] = [
