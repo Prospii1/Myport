@@ -1,0 +1,117 @@
+@import "tailwindcss";
+
+:root {
+  --color-obsidian: #000000;
+  --color-black-deep: #050505;
+  --color-black-near: #0a0a0a;
+  --color-cyan: #00fffc;
+  --color-cyan-dim: #00fffc66;
+  --color-white: #ffffff;
+  --color-muted: #8a8f8f;
+  --color-line: #1a1a1a;
+
+  --background: var(--color-obsidian);
+  --foreground: var(--color-white);
+}
+
+@theme inline {
+  --color-obsidian: var(--color-obsidian);
+  --color-black-deep: var(--color-black-deep);
+  --color-black-near: var(--color-black-near);
+  --color-cyan: var(--color-cyan);
+  --color-cyan-dim: var(--color-cyan-dim);
+  --color-muted: var(--color-muted);
+  --color-line: var(--color-line);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-display: var(--font-neue-montreal), "Neue Montreal", "Helvetica Neue", Arial, sans-serif;
+  --font-sans: var(--font-inter), "Inter", Arial, sans-serif;
+  --font-mono: var(--font-jetbrains), "JetBrains Mono", monospace;
+}
+
+html {
+  background: var(--color-obsidian);
+  scroll-behavior: auto;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-cyan);
+  color: #000;
+}
+
+/* thin custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cyan-dim);
+}
+
+/* grain overlay */
+.grain {
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  opacity: 0.035;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* custom cursor */
+.cursor-hidden,
+.cursor-hidden * {
+  cursor: none !important;
+}
+
+@media (hover: none) {
+  .cursor-hidden,
+  .cursor-hidden * {
+    cursor: auto !important;
+  }
+}
+
+.text-glow {
+  text-shadow: 0 0 24px var(--color-cyan-dim);
+}
+
+.mono-label {
+  font-family: var(--font-mono);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* visible focus states for accessibility */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--color-cyan);
+  outline-offset: 3px;
+}
