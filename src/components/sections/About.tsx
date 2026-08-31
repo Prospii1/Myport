@@ -1,6 +1,6 @@
+import Image from "next/image";
 import SectionLabel from "@/components/ui/SectionLabel";
 import RevealText from "@/components/ui/RevealText";
-import ProjectVisual from "@/components/ui/ProjectVisual";
 import { siteSettings } from "@/data/settings";
 
 export default function About() {
@@ -10,15 +10,16 @@ export default function About() {
         <SectionLabel index="05" label="About" />
 
         <div className="grid gap-16 md:grid-cols-[0.85fr_1.15fr] md:gap-20">
-          <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden border border-line">
-            {/* Elegant generative placeholder, replace via CMS profile image field. */}
-            <ProjectVisual slug="evimero-founder" className="h-full w-full" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-black/40">
-              <div className="flex h-20 w-20 items-center justify-center rounded-full border border-cyan/50 bg-black/60">
-                <span className="font-display text-2xl text-cyan">PO</span>
-              </div>
-              <span className="mono-label text-white/70">Portrait Pending</span>
-            </div>
+          <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden border border-line bg-black-near">
+            <Image
+              src="/images/prosper-portrait.png"
+              alt={`${siteSettings.ownerName}, founder of ${siteSettings.brandName}`}
+              fill
+              sizes="(min-width: 768px) 24rem, 100vw"
+              className="object-cover"
+              priority
+            />
+            <div className="pointer-events-none absolute inset-0 shadow-[inset_0_0_60px_rgba(0,0,0,0.5)]" />
           </div>
 
           <div>
