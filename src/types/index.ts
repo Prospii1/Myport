@@ -105,4 +105,5 @@ export interface SiteSettings {
   philosophyBody: string;
   contactStatement: string[];
   contactBody: string;
+  introVideoId?: string;
 }

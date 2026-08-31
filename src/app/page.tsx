@@ -6,6 +6,7 @@ import CustomCursor from "@/components/ui/CustomCursor";
 import Navigation from "@/components/layout/Navigation";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
+import FounderVideo from "@/components/sections/FounderVideo";
 import Positioning from "@/components/sections/Positioning";
 import Services from "@/components/sections/Services";
 import Process from "@/components/sections/Process";
@@ -30,6 +31,7 @@ export default function Home() {
       <Navigation />
       <main>
         <Hero started={loaded} />
+        <FounderVideo />
         <Positioning />
         <Work />
         <Services />

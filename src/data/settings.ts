@@ -22,6 +22,8 @@ export const siteSettings: SiteSettings = {
   contactStatement: ["WHAT SHOULD WE", "BUILD NEXT?"],
   contactBody:
     "Have a business problem, an idea, or a process that needs a better system?",
+  // Unlisted YouTube video ID for the "Meet the Founder" intro.
+  introVideoId: "EH6rKqGsZdo",
 };
 
 // Mirrors the future `social_links` table.
