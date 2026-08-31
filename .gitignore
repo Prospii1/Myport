@@ -39,6 +39,10 @@ yarn-error.log*
 # local debug/QA screenshots
 /.screenshots
 
+# large local video source files — never commit these to git; upload to
+# Vercel Blob / a video host and embed the resulting URL instead
+/public/videos
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
