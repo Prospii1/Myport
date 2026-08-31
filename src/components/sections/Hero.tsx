@@ -42,6 +42,10 @@ function AnimatedLine({ text, delay }: { text: string; delay: number }) {
 }
 
 export default function Hero({ started }: { started: boolean }) {
+  const longestLineLength = Math.max(
+    ...siteSettings.heroHeadline.map((l) => l.length)
+  );
+
   return (
     <section className="relative flex min-h-screen flex-col overflow-hidden px-6 pb-16 pt-32 md:px-12 md:pt-36">
       <div className="absolute inset-0">{started && <HeroVisual />}</div>
@@ -72,10 +76,23 @@ export default function Hero({ started }: { started: boolean }) {
       </div>
 
       {/* headline anchored bottom for drama */}
-      <div className="relative z-10 mt-auto">
-        <h1 className="font-display text-[11vw] font-medium leading-[0.92] tracking-tight text-white sm:text-[9vw] md:text-[5.2vw] whitespace-nowrap">
+      <div className="relative z-10 mt-12 md:mt-auto">
+        <h1
+          className="font-display font-medium leading-[0.92] tracking-tight text-white"
+          style={{
+            // Sized purely as a vw fraction of the longest headline line's
+            // character count, so it scales with viewport width and always
+            // fits (with margin for section padding) at any device size —
+            // the reveal animation renders each line as a single no-wrap
+            // run, so the font-size itself has to guarantee the fit rather
+            // than wrapping.
+            fontSize: `min(${155 / longestLineLength}vw, 5.2vw)`,
+          }}
+        >
           {siteSettings.heroHeadline.map((l, i) => (
-            <AnimatedLine key={i} text={l} delay={started ? 0.3 + i * 0.15 : 0} />
+            <span key={i} className="block whitespace-nowrap">
+              <AnimatedLine text={l} delay={started ? 0.3 + i * 0.15 : 0} />
+            </span>
           ))}
         </h1>
 

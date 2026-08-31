@@ -48,7 +48,7 @@ export default function Navigation() {
             <Logo className="text-sm md:text-base" />
           </Link>
 
-          <ul className="hidden items-center gap-8 md:flex">
+          <ul className="hidden items-center gap-6 lg:gap-8 lg:flex">
             {links.map((l) => (
               <li key={l.href}>
                 <Link
@@ -61,7 +61,7 @@ export default function Navigation() {
             ))}
           </ul>
 
-          <div className="hidden md:block">
+          <div className="hidden lg:block">
             <MagneticButton
               as="a"
               href="/#contact"
@@ -76,7 +76,7 @@ export default function Navigation() {
             aria-label="Toggle menu"
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((v) => !v)}
-            className="flex flex-col gap-1.5 md:hidden"
+            className="flex flex-col gap-1.5 lg:hidden"
           >
             <span
               className={cn(
@@ -100,7 +100,7 @@ export default function Navigation() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 z-[998] flex flex-col items-center justify-center gap-8 bg-black md:hidden"
+            className="fixed inset-0 z-[998] flex flex-col items-center justify-center gap-8 bg-black lg:hidden"
           >
             {links.map((l, i) => (
               <motion.div
